@@ -1,0 +1,8 @@
+1、最好的做法是将<script>标签放到HTML文档的最后，</body>标签之前；
+2、字面量：用于表示固定值的符号。字面量是指这个量本身。（e.g.:字面量3，就是指3）
+3、创建数组。var box=new Array();  可以省略 new 关键字 var box = Array();
+4、创建数组和创建对象的区别：var box=new Array(); var box = new Object();  或者 var box = [];  var box = {};
+5、js中字符串比较没有equals，而是“==”
+6、如果在某个函数中使用了var，则该变量为局部变量；没有没有使用var，则该变量被视为全局变量。
+7、包含在对象中的数据可以通过两种形式访问：property（属性）和method（方法）。
+8、宿主对象：由浏览器提供的预定义对象（e.g.:document）
