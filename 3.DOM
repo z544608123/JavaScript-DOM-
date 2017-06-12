@@ -13,6 +13,6 @@
    getElementsByClassName()返回一个对象数组
    
 4、获取和设置属性
-  getAttribute()
+  getAttribute(attribute)
   setAttribute(attribute,value);
   该方法不属于document对象，所以不能通过document对象调用，智能通过元素节点对象调用
