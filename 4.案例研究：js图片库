@@ -1,0 +1,13 @@
+1、要想得到元素中的属性值
+  e.g:
+  <p title="this is a paragraph"></p>
+  想要得到title中的值，先得到p标签，再利用getAttribute()得到
+  
+2、事件处理函数，触发JavaScript中的代码；
+   return false；可以防止用户被带到目标链接窗口
+   
+   
+3、DOM属性:childNodes  nodeType   nodeValue   firstChild lastChild 
+  childNodes 返回数组，获取元素的子元素；
+  nodeType 返回数字，元素节点 1；  属性节点 2； 文本节点 3；获取节点的nodeType属性
+  nodeValue 返回节点的值
