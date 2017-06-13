@@ -11,3 +11,31 @@
   childNodes 返回数组，获取元素的子元素；
   nodeType 返回数字，元素节点 1；  属性节点 2； 文本节点 3；获取节点的nodeType属性
   nodeValue 返回节点的值
+  nodeName 返回节点的name
+  
+  需要注意的是，body下的childNodes[0]或者childNode[0].nodeName都是text，第二个才是h1
+  *******************************************
+  <body>
+		<h1>Snapshots</h1>
+		<ul id="imagegallery">
+			<li><a href="images/1.png" title="this is the first pic of Haru">Haru1</a></li>
+			<li><a href="images/2.png" title="this is the second pic of Haru">Haru2</a></li>
+			<li><a href="images/3.png" title="this is the third pic of Haru">Haru3</a></li>
+			<li><a href="images/4.png" title="this is the forth pic of Haru">Haru4</a></li>
+		</ul>
+		<img id="placeholder" src="images/5.png">
+		<p id="description">Choose an image</p>
+		<script type="text/javascript" src="js/test1.js"></script>
+		<a href="this.href" onclick="popUp('http://www.baidu.com'); return false;">Example</a>
+	</body>
+ ********************************************
+ text
+ h1
+ text
+ ul
+ text
+ img
+ text
+ p
+ text
+ script
