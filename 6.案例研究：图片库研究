@@ -1,0 +1,20 @@
+1、addLoadEvent函数，它只有一个参数：打算在页面加载完毕时执行的函数的名字
+  function addLoadEvent(func){
+    var oldonload = window.onload;
+    if(typeof window.onload != "function"){
+      window.onload = func;
+    }else{
+      window.onload = function(){
+        oldonload();
+        func();
+      }    
+    }
+  }
+  
+  
+2、nodeName属性总是返回一个值，该值是大写字母（P、UL、H1、A、SCRIPT）
+
+3、DOM core 和 HTML-CORE
+   document.getElementById("form"); ===    document.forms;
+   element.getAttribute("src");     ===    element.src;
+   element.setAttribute("src",href) ===    element.src = href;
