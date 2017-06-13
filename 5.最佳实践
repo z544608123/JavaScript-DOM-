@@ -19,3 +19,4 @@
    
 6、为什么需要添加 window.onload = function(){//code}
    需要code中的代码在HTML文档全部加载到浏览器之后马上开始执行
+   网页中的javaScript脚本代码往往需要在文档加载完成后才能够去执行，否则可能导致无法获取对象的情况，为了避免这种情况的发生，而使用了window.onload
