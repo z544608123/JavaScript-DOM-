@@ -1,0 +1,13 @@
+1、js使用window对象的open()方法创建新的浏览器窗口
+语法：window.open(url,name,feature)
+例子：window.open("http://www.baidu.com","popup","width=320,height=480");
+
+2、DOM提供了this.href属性，可设置或返回当前显示的文档的完整 URL
+
+3、如何实现JavaScript分离
+    可以在外部的JavaScript文件里把一个事件添加到HTML文档中的某个元素上
+    例子：getElementById(id).event = action;
+    
+4、对象检测
+   在使用对象检测时，一定要烧掉方法名后的圆括号
+   if(document.getElementBuId){}  //判断方法是否存在
