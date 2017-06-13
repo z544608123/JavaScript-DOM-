@@ -10,7 +10,7 @@
 3、DOM属性:childNodes  nodeType   nodeValue   firstChild lastChild 
   childNodes 返回数组，获取元素的子元素；
   nodeType 返回数字，元素节点 1；  属性节点 2； 文本节点 3；获取节点的nodeType属性
-  nodeValue 返回节点的值
+  nodeValue 返回节点所包含的文本
   nodeName 返回节点的name
   
   需要注意的是，body下的childNodes[0]或者childNode[0].nodeName都是text，第二个才是h1
