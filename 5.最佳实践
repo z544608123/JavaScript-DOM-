@@ -16,3 +16,6 @@
 5、对象检测
    在使用对象检测时，一定要烧掉方法名后的圆括号
    if(document.getElementBuId){}  //判断方法是否存在
+   
+6、为什么需要添加 window.onload = function(){//code}
+   需要code中的代码在HTML文档全部加载到浏览器之后马上开始执行
