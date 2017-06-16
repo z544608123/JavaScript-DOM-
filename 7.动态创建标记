@@ -10,7 +10,7 @@
   parentElement.insertBefore(newElement,targetElement);
   parentElement一般为 当前结点.parentNode
   
-7、编写insertAfter()方法
+7、自写函数二 ===========编写insertAfter()方法
    function insertAfter(newElement,targetElement){
       var parent = targetElement.parentNode
       if(targetElement == parent.lastChild){
