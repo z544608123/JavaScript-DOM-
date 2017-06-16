@@ -1,0 +1,25 @@
+1、document.write()最大的缺点：违背了行为应与表现分析
+2、innerHTML属性：读写操作都支持
+
+3、createElement(nodeName)创建元素节点
+4、 parent.appendChild(child)方法，新创建的节点成为当前某个现有节点的子节点 
+5、 document.createTextNode(text);创建文本节点
+    在使用appendChild进行追加时，直接追加，即直接使用parent.appendChild(child)即可，不需要赋值给新变量再追加；
+
+6、insertBefore()方法,把新元素插入到一个现有元素的前面
+  parentElement.insertBefore(newElement,targetElement);
+  parentElement一般为 当前结点.parentNode
+  
+7、编写insertAfter()方法
+   function insertAfter(newElement,targetElement){
+      var parent = targetElement.parentNode
+      if(targetElement == parent.lastChild){
+          parent.appendChild(newElement);
+      }else{
+          insertBefore(newElement, targetElement.nextSibling);
+      }
+   }
+   
+   nextSibling属性，返回指定节点之后紧跟的兄弟结点。
+   
+ 8、ajax异步加载页面内容，该技术的核心XMLHttpRequest对象，该对象充当着浏览器中的脚本（客户端）与服务器之间的中间人角色，ajax应用主要依赖与服务器端处理
