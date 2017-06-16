@@ -1,4 +1,4 @@
-1、addLoadEvent函数，它只有一个参数：打算在页面加载完毕时执行的函数的名字
+1、自写函数一 ===========addLoadEvent函数，它只有一个参数：打算在页面加载完毕时执行的函数的名字
   function addLoadEvent(func){
     var oldonload = window.onload;
     if(typeof window.onload != "function"){
