@@ -1,0 +1,14 @@
+1、for/in循环  把某个数组的下表临时赋值给一个变量
+   for(variable in array){}
+   
+   
+2、有些浏览器会把换行符解释为一个文本节点，所以需要检查元素节点的lastChild属性返回的是元素节点，而不是文本节点。
+   var p = document.getElementsByTagName("p");
+   for(var i = 0; i < p.length; i++){
+      var element = p[i].getElementsByTagName("*");
+   }
+   变量element是一个数组
+   
+3、<sup></sup>让元素在浏览器呈现出上标的效果；
+   <blockquote cite="url"></blockquote> 长引用
+   
