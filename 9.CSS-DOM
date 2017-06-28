@@ -1,0 +1,29 @@
+1、html结构层
+   css 表示层
+   js  行为层
+   
+   
+2、当需要引用一个中间带减号的CSS属性时，DOM要求使用驼峰命名法
+   e.g.,font-family  ----   fontFamily
+   
+   
+3、style对象的属性值永远是一个字符串
+   element.style.property = value;
+   e.g., p.style.color = "black";
+   
+4、css中的两个位置选择器
+   nth-child()
+   nth-of-type()
+   e.g., 
+   tr:nth-child(odd){
+      background-color:#fcc;
+   }
+   
+   
+5、className属性可以得到一个元素的class属性
+   element.className;
+   
+   className属性也可以设置一个元素的class属性
+   element.className = value;
+   如果想要实现标签类名的“追加”，可以在新增的类名前，添加一个空格：
+   element.className += " classname"
