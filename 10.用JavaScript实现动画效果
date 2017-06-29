@@ -14,3 +14,20 @@
   如果不这么写的话就会被认为是final_x字符串,就是这样"final_x"
   但是为了把final_x这个变量传到方法里，所以加上 +.....+ 就是 final_x 变量了
   （要动态拼接字符串 如果在一个字符串里写final_x 会把他当做字符串常量来判断 本来final_x = "aaa" 最后直接变为了 "final_x"）
+  
+4、css用overflow属性来处理一个元素的尺寸超出器容器尺寸的情况
+   四个属性：auto,scroll,visible,hidden
+   
+   
+5、变量作用域问题
+   全局变量：如果全局变量晚于调用定义，则会出现运行错误；
+   局部变量：只在局部上下文有意义；
+   所以有的时候需要一种介于全局变量和局部变量的一种变量，这种变量只与正在被移动的那个元素有关：：：：：element.property = value;
+   例如：创建一个名为foo的属性，并把它设置为“bar”
+        element.foo = "bar"；
+        
+        
+ 6、Math函数中关于四舍五入的问题
+    Math.ceil(number);   入
+    Math.floor(number);  舍
+    Math.round(number);  四舍五入
