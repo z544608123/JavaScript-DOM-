@@ -1,0 +1,16 @@
+1、时间  setTimeout("function",interval)
+   variable = setTimeout("function",interval);
+   clearTimeout(variable);
+   
+   
+2、parseInt(string)
+
+
+3、
+  var repeat = "moveElement('"+elementID+"',"+final_x+","+final_y+","+interval+")";  
+  setTimeout()函数的第一个参数是一个字符串，Javascript用引号表示字符串，用 “+”号连接字符串。
+  
+  为什么var repeat = "moveElement('"+elementID+"',"+final_x+","+final_y+","+interval+")";这里要写+....+，能不能直接写final_x？
+  如果不这么写的话就会被认为是final_x字符串,就是这样"final_x"
+  但是为了把final_x这个变量传到方法里，所以加上 +.....+ 就是 final_x 变量了
+  （要动态拼接字符串 如果在一个字符串里写final_x 会把他当做字符串常量来判断 本来final_x = "aaa" 最后直接变为了 "final_x"）
