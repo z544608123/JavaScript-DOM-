@@ -1,0 +1,7 @@
+1、在创建css时，可以有三种：一个保存于整体布局有关的样式(layout.css)；一个作为专门的颜色样式表(color.css)；第三个保存与版式有关的样式(typography.css)。
+  将这三类css，存于basic.css中，  
+  @import url(layout.css);
+  @import url(color.css);
+  @import url(typography.css);
+  
+2、
