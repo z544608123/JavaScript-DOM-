@@ -4,4 +4,42 @@
   @import url(color.css);
   @import url(typography.css);
   
-2、
+2、制作导航栏：
+   ul{
+      overflow:hidden;
+   }
+
+   li{
+      display:inline;
+   }
+   
+   a{
+      display:block;
+      float:left;
+   }
+   
+   
+3、获取当前页面的URL：window.location.href
+
+4、indexOf方法用于在字符串中寻找子字符串的位置，如果没有匹配到，返回-1
+   string.indexOf(substring);
+   
+5、split()返回数组
+   array = string.split(character);
+   join()把数组中的所有元素放入一个字符串
+   array.join(separator)
+   
+6、如何实现显示与隐藏
+   element.style.display = "none";
+   element.style.display = "block";
+   
+ 7、label元素，<label for=""></label>  通过for属性可以把一段文本关联到表单的一个字段，如果label中的文本呗单机，关联的表单字段就会获得焦点。
+    <label> 标签的 for 属性应当与相关元素的 id 属性相同。
+                <label for="female">Female</label>
+                <input type="radio" name="sex" id="female" />
+                
+ 8、form对象有一个  form.elements.length 只关注属于表单的元素；
+ 
+ 9、element.value表示表单元素的当前值   =====   等价于 element.getAttribute("value");
+ 
+ 10、正则表达式：\s匹配任意空白字符    \S匹配任意非空白字符
